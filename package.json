@@ -1,0 +1,24 @@
+{
+  "name": "escrow-oracle",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "oracle:dev": "pnpm --filter oracle dev",
+    "oracle:build": "pnpm --filter oracle build",
+    "oracle:start": "pnpm --filter oracle start",
+    "contracts:deploy:sepolia": "pnpm --filter contracts deploy:sepolia",
+    "contracts:deploy:prod": "pnpm --filter contracts deploy:prod",
+    "contracts:verify": "pnpm --filter contracts verify"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
+

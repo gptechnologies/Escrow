@@ -1,0 +1,19 @@
+{
+  "name": "@escrow/contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy-sepolia.ts --network arbitrumSepolia",
+    "deploy:prod": "hardhat run scripts/deploy-prod.ts --network arbitrumOne",
+    "verify": "hardhat verify --network arbitrumSepolia",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.19.4",
+    "typescript": "^5.3.3"
+  }
+}
+
